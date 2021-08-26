@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>結果ページ</title>
+</head>
+
+<body>
+    <h1>結果</h1>
+    <p>こんにちは! {{ name }}</p>
+</body>
+
+</html>
