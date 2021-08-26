@@ -13,9 +13,9 @@ Install packages by pip
 pip install Flask
 ```
 
-Start main.py
+Start form.py
 
 ```
-export FLASK_APP=main
+export FLASK_APP=form
 flask run
 ```
