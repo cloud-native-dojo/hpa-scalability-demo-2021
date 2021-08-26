@@ -1,7 +1,7 @@
 FROM python:3.8-slim
 EXPOSE 5000
 COPY flask-study/ /work
-WORKDIR /work/flask-study/
-RUN pip install Flask
+WORKDIR /work
+RUN pip install --no-cache-dir Flask
 ENV FLASK_APP=form
-CMD ["flask", "run"]
+CMD ["flask", "run", "--host=0.0.0.0"]
