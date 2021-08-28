@@ -1,0 +1,33 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginxdemo-pod
+  labels:
+    app: nginxdemo
+spec:
+  replicas: 4
+  selector:
+    matchLabels:
+      app: nginxdemo
+  template:
+    metadata:
+      labels:
+        app: nginxdemo
+    spec:
+      containers:
+      - name: hello-container
+        image: nginxdemos/hello
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: nginxdemo-service
+spec:
+  type: NodePort
+  selector:
+    app: nginxdemo
+  ports:
+    - name: "http-port"
+      protocol: "TCP"
+      port: 88
+      targetPort: 80
