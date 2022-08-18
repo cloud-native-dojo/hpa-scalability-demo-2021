@@ -1,19 +1,9 @@
-# cloud-native-dojo-2021
+# Cloud Native Dojo 2021
 
-Build container
+Cloud Native Dojoは東京工科大の学生を対象とした価値創造プロジェクトです．
 
-```
-docker build -t myapp:v0.1.1 .
-```
+以下は2021年度の成果を記録した動画です．
 
-Start container
+KubernetesのHPAとよばれる機能の評価を行いました．
 
-```
-docker run -d -p 5000:5000 --rm myapp:v0.1.1
-```
-
-Access container
-
-```
-curl localhost:5000
-```
+[![デモンストレーション動画](https://img.youtube.com/vi/bFr5Ixae58Q/0.jpg)](https://www.youtube.com/watch?v=bFr5Ixae58Q)
